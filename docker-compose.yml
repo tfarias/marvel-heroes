@@ -1,0 +1,25 @@
+version: "3"
+services:
+  marvel_app:
+    build: .
+    container_name: marvel_app
+    volumes:
+      - ./:/var/www
+    networks:
+      - marvel_network
+
+  marvel_server:
+    build: ./.docker/nginx
+    container_name: marvel_server
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - marvel_app
+    networks:
+      - marvel_network
+
+networks:
+  marvel_network:
+    driver: bridge

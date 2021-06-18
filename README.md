@@ -1,0 +1,72 @@
+##Heróis Marvel
+
+- API - Desenvolvida com Framework Laravel 
+   ```
+    http://localhost:8000
+  ```
+
+# Instalação
+- Para fazer a instalação basta seguir os paços abaixo:
+```
+    Após fazer o clone da aplicação editar o arquivo
+     .env adicionando as keys que foram enviadas por e-mail
+     
+     PUBLIC_KEY=
+     PRIVATE_KEY=
+     
+    Executar esse comando
+    
+    $ docker-compose up -d --build
+    
+    -  caso apresente erro ao executar a aplicação execute este comando
+    
+    $ docker exec -it tray_api composer install
+    
+    *** Caso de algum erro de permissão execute o comando abaixo na raiz do projeto:
+    chmod -R 777 api/storage
+    chmod -R 777 api/bootstrap
+  
+    E após isso execute o docker novamente
+    
+    $ docker-compose up -d --build
+    
+  ```
+
+## Testes
+- Para rodar os testes da api basta rodar o comando 
+
+```
+    $ docker exec -it marvel_app vendor/bin/phpunit tests
+```
+- Porém como pode ser observado nas actions do repositório do github, já está sendo feito os tests com phpunit na aplicação. :)
+
+## Desafio
+
+- [x] Buscar na API da Marvel (https://developer.marvel.com/docs) os seus 3 heróis favoritos
+  ```
+    - Endpoint: http://localhost:8000
+        Method: GET
+  ```
+- [x] Listar 5 histórias nas quais eles apareçam.
+
+  ```
+    - Endpoint: http://localhost:8000/{id}/historias
+        Method: GET
+      Acionado a partir do botão histórias na tela home
+   
+  ```
+  
+  ![Alt text](files/tela_home.png?raw=true "Title")
+
+## Observação
+
+- Template utilizado Admin-Lte v3
+- Optei por utiliza-lo pois eu desenvolvi um automatizador de códigos utilizando o template mensionado
+ 
+```
+    Url repositório: 
+    https://packagist.org/packages/tfarias/instalador-tfarias-lte
+ ```
+
+
+

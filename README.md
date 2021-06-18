@@ -38,7 +38,6 @@
 ```
     $ docker exec -it marvel_app vendor/bin/phpunit tests
 ```
-- Porém como pode ser observado nas actions do repositório do github, já está sendo feito os tests com phpunit na aplicação. :)
 
 ## Desafio
 

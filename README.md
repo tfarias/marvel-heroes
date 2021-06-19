@@ -20,7 +20,7 @@
     
     -  caso apresente erro ao executar a aplicação execute este comando
     
-    $ docker exec -it tray_api composer install
+    $ docker exec -it marvel_app composer install
     
     *** Caso de algum erro de permissão execute o comando abaixo na raiz do projeto:
     chmod -R 777 api/storage

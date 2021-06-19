@@ -23,8 +23,8 @@
     $ docker exec -it marvel_app composer install
     
     *** Caso de algum erro de permissão execute o comando abaixo na raiz do projeto:
-    chmod -R 777 api/storage
-    chmod -R 777 api/bootstrap
+    chmod -R 775 storage
+    chmod -R 775 bootstrap
   
     E após isso execute o docker novamente
     

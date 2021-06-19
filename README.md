@@ -26,7 +26,9 @@
     chmod -R 775 storage
     chmod -R 775 bootstrap
     
-    *** Se mesmo assim ainda está com erro de permissão. Deve ser os vilões que não querem a exibição dos heróis:
+    *** Se mesmo assim ainda está com erro de permissão. 
+    Com certeza são vilões que não querem a exibição dos heróis :)
+    
     chmod -R 777 storage
     chmod -R 777 bootstrap
     

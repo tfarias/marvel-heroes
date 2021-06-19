@@ -25,10 +25,15 @@
     *** Caso de algum erro de permissão execute o comando abaixo na raiz do projeto:
     chmod -R 775 storage
     chmod -R 775 bootstrap
-  
-    E após isso execute o docker novamente
     
-    $ docker-compose up -d --build
+    *** Se mesmo assim ainda está com erro de permissão. Deve ser os vilões que não querem a exibição dos heróis:
+    chmod -R 777 storage
+    chmod -R 777 bootstrap
+    
+    *** Com esses comandos eles serão eliminados :):
+
+
+  
     
   ```
 
